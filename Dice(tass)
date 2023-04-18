@@ -1,0 +1,30 @@
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+#include<stdlib.h>
+using namespace std;
+int main()
+{
+	int rand() , a=1,b=6,y;
+	char j;
+	while(true)
+	{
+		cout<<"Do you want to keep (Y/N) ? ";
+
+		cin>>j;
+		if (j == 'y')
+		{
+			y=rand()%(b-a+1)+a;
+			cout<<y<<'\n';
+		}
+		
+		else if(j == 'n' || j!='y','n')
+		{
+			cout<<"thanks for play whith me :)"<<'\n'<<"good luck my frind";
+			break;
+		}
+		
+	}
+	getch();
+	return 0;
+}
